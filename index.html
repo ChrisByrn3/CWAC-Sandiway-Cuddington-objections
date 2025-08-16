@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planning Application Objections</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      padding-bottom: 130px; /* make room for sticky bar */
+    }
+    header {
+      background: #004d40;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    main {
+      padding: 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    section {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h2 {
+      margin-top: 0;
+      color: #004d40;
+    }
+    p {
+      margin: 0.5rem 0 1.5rem;
+      font-size: 1.1rem;
+    }
+    a.button {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 1.2rem;
+      background: #00796b;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.3s ease, transform 0.1s ease;
+    }
+    a.button:hover {
+      background: #004d40;
+      transform: scale(1.02);
+    }
+    /* Sticky bottom bar */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #00bfa5; /* bright teal */
+      padding: 0.8rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      z-index: 999;
+      box-shadow: 0 -3px 6px rgba(0,0,0,0.2);
+    }
+    .sticky-bar h3 {
+      margin: 0;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .sticky-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+    .sticky-bar a {
+      flex: 1;
+      min-width: 150px;
+      text-align: center;
+      padding: 1.2rem;
+      background: #00695c;
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background 0.3s ease, transform 0.1s ease;
+    }
+    .sticky-bar a:hover {
+      background: #004d40;
+      transform: scale(1.03);
+    }
+    /* Mobile tweaks */
+    @media (max-width: 600px) {
+      .sticky-bar h3 {
+        font-size: 1.2rem;
+      }
+      .sticky-bar a {
+        font-size: 1.3rem;
+        padding: 1.4rem;
+      }
+      .sticky-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Object to Planning Applications</h1>
+    <p>Your voice matters – help protect our village character</p>
+  </header>
+  <main>
+    <section>
+      <h2>Application 25/02111/FUL</h2>
+      <p>
+        This application proposes inappropriate development within the greenbelt. 
+        Concerns include increased traffic, loss of biodiversity, and erosion of 
+        our village’s rural character.
+      </p>
+      <a class="button" href="https://chrisbyrn3.github.io/Planning-Obj-25-02111-FUL/" target="_blank">
+        ✉️ Object to 25/02111/FUL
+      </a>
+    </section>
+
+    <section>
+      <h2>Application 25/02017/FUL</h2>
+      <p>
+        This proposal would lead to overdevelopment and does not meet the housing 
+        needs identified in the Cuddington and Sandiway plan. Issues include 
+        pressure on local services, inadequate infrastructure, and harm to the 
+        community’s historic character.
+      </p>
+      <a class="button" href="https://chrisbyrn3.github.io/Planning-Obj-25-02017-FUL/" target="_blank">
+        ✉️ Object to 25/02017/FUL
+      </a>
+    </section>
+  </main>
+
+  <!-- Sticky Bottom Bar -->
+  <div class="sticky-bar">
+    <h3>⚡ Quick Action: Object Now</h3>
+    <div class="sticky-buttons">
+      <a href="https://chrisbyrn3.github.io/Planning-Obj-25-02111-FUL/" target="_blank">✉️ 25/02111/FUL</a>
+      <a href="https://chrisbyrn3.github.io/Planning-Obj-25-02017-FUL/" target="_blank">✉️ 25/02017/FUL</a>
+    </div>
+  </div>
+</body>
+</html>
