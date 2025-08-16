@@ -2,112 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Planning Application Objections</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planning Applications Objection</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0 1rem 6rem; /* extra padding at bottom for sticky bar */
-      background: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
+      padding: 0 0 70px; /* reserve space for sticky bar */
+      background-color: #f9f9f9;
     }
+
     .container {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    h1 {
-      text-align: center;
-      margin: 1rem 0;
-      color: #004d40;
-    }
-    .card {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      margin: 1rem 0;
-      padding: 1.2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    .card h2 {
-      margin-top: 0;
+
+    h2 {
       color: #00695c;
+      margin-bottom: 10px;
     }
+
+    p {
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
     .btn {
-      display: block;
-      width: 90%; /* ensures no overflow */
-      max-width: 400px;
-      margin: 1rem auto 0;
-      padding: 0.8rem;
+      display: inline-block;
+      padding: 12px 18px;
       background: #009688;
       color: #fff;
-      font-size: 1.1rem;
-      font-weight: bold;
-      text-align: center;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background 0.3s ease;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s;
+      margin-top: 10px;
     }
+
     .btn:hover {
       background: #00796b;
     }
-    .sticky {
+
+    /* Sticky bar */
+    .sticky-bar {
       position: fixed;
       bottom: 0;
       left: 0;
       width: 100%;
-      background: #00bfa5;
-      padding: 0.8rem 0.5rem;
-      box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+      background: #009688;
+      padding: 8px 10px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
       text-align: center;
+      z-index: 999;
     }
-    .sticky h3 {
-      margin: 0 0 0.5rem;
-      color: #fff;
-      font-size: 1rem;
+
+    .sticky-bar span {
+      display: block;
       font-weight: bold;
+      color: #fff;
+      margin-bottom: 5px;
+      font-size: 14px;
     }
-    .sticky .btn {
-      margin: 0.4rem auto;
+
+    .sticky-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .sticky-buttons a {
+      flex: 1;
+      max-width: 140px;
+      background: #00796b;
+      padding: 10px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sticky-buttons a:hover {
       background: #00695c;
-    }
-    .sticky .btn:hover {
-      background: #004d40;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Object to Local Planning Applications</h1>
-
-    <div class="card">
-      <h2>Application 25/02111/FUL</h2>
-      <p>
-        This application proposes development that threatens to significantly alter the 
-        rural character of Cuddington and Sandiway. Concerns include increased traffic/road safety, 
-        loss of biodiversity, and erosion of our village’s rural landscape.
-      </p>
-      <a href="https://chrisbyrn3.github.io/Planning-Obj-25-02111-FUL/" class="btn">✉️ Object to 25/02111/FUL</a>
-    </div>
-
-    <div class="card">
-      <h2>Application 25/02017/FUL</h2>
-      <p>
-        This proposal would lead to overdevelopment and does not meet the housing needs 
-        identified in the Cuddington Parish Village Plan. Issues include pressure on local 
-        services, inadequate infrastructure, nature/biodiversity loss and harm to the community’s historic character.
-      </p>
-      <a href="https://chrisbyrn3.github.io/Planning-Obj-25-02017-FUL/" class="btn">✉️ Object to 25/02017/FUL</a>
-    </div>
+    <h2>Application 25/02111/FUL</h2>
+    <p>This application proposes development that threatens to significantly alter the rural character of Cuddington and Sandiway. Concerns include increased traffic/road safety, loss of biodiversity, and erosion of our village’s rural landscape.</p>
+    <a href="https://chrisbyrn3.github.io/Planning-Obj-25-02111-FUL/" class="btn">✉ Object to 25/02111/FUL</a>
   </div>
 
-  <div class="sticky">
-    <h3>⚡ Quick Action: Object Now</h3>
-    <a href="https://chrisbyrn3.github.io/Planning-Obj-25-02111-FUL/" class="btn">✉️ 25/02111/FUL</a>
-    <a href="https://chrisbyrn3.github.io/Planning-Obj-25-02017-FUL/" class="btn">✉️ 25/02017/FUL</a>
+  <div class="container">
+    <h2>Application 25/02017/FUL</h2>
+    <p>This proposal would lead to overdevelopment and does not meet the housing needs identified in the Cuddington Parish Village Plan. Issues include pressure on local services, inadequate infrastructure, nature/biodiversity loss and harm to the community’s historic character.</p>
+    <a href="https://chrisbyrn3.github.io/Planning-Obj-25-02017-FUL/" class="btn">✉ Object to 25/02017/FUL</a>
+  </div>
+
+  <div class="sticky-bar">
+    <span>⚡ Quick Action: Object Now</span>
+    <div class="sticky-buttons">
+      <a href="https://chrisbyrn3.github.io/Planning-Obj-25-02111-FUL/">25/02111/FUL</a>
+      <a href="https://chrisbyrn3.github.io/Planning-Obj-25-02017-FUL/">25/02017/FUL</a>
+    </div>
   </div>
 </body>
 </html>
