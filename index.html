@@ -1,8 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planning Applications Objection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding-bottom: 80px; /* reserve space for sticky bar */
+      background-color: #f9f9f9;
+    }
+
+    /* Header */
+    header {
+      background-color: #00695c;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 15px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #00695c;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #009688;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #00796b;
+    }
+
+    /* Sticky bar */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #009688;
+      padding: 10px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+      text-align: center;
+      z-index: 999;
+    }
+
+    .sticky-bar span {
+      display: block;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .sticky-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .sticky-buttons a {
+      flex: 1 1 120px;
+      background: #00796b;
+      padding: 10px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sticky-buttons a:hover {
+      background: #00695c;
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 20px;
+      }
+      header p {
+        font-size: 12px;
+      }
+      .container {
+        padding: 15px;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      p, .btn {
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
 <body>
+
   <!-- Page Header -->
-  <header style="background:#00695c; color:#fff; padding:20px 0; text-align:center;">
-    <h1 style="margin:0; font-size:28px;">Cuddington Parish Planning Applications</h1>
-    <p style="margin:5px 0 0; font-size:16px;">Raise your objections quickly and easily</p>
+  <header>
+    <h1>Cuddington Parish Planning Applications</h1>
+    <p>Raise your objections quickly and easily</p>
   </header>
 
   <div class="container">
@@ -24,4 +161,6 @@
       <a href="https://chrisbyrn3.github.io/Planning-Obj-25-02017-FUL/">25/02017/FUL</a>
     </div>
   </div>
+
 </body>
+</html>
